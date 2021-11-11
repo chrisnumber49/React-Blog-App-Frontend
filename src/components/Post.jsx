@@ -49,8 +49,8 @@ function Post(props) {
     }
 
     return ( 
-        <div className="d-flex justify-content-center flex-wrap col-12">
-            <div className="card border border-dark rounded-lg shadow-lg my-2" style={{width: '50%'}}>
+        <div className="d-flex justify-content-center flex-wrap p-2">
+            <div className="card border border-dark rounded-lg shadow-lg my-2 col-12 col-lg-5">
                 {/* row to show the user who post it and place the edit/delter button */}
                 <div className="d-flex align-items-center justify-content-between p-2">
                     <h4 className="ml-2 font-weight-bolder">{props.post.author.username}</h4>

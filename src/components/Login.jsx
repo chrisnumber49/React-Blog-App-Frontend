@@ -76,6 +76,11 @@ function Login(props) {
                     <h5>If You Have Account, You Can <button className = "btn btn-primary mr-2" onClick = {() => setLogin(true)} >Login</button>Here</h5>
                 }
             </div>
+
+            <div className="text-white mt-5">
+                <p>Try with this user name if you don't want to register: Guest, password: 1234</p>
+                <p className="text-warning">It will cause a short delay to wake up the web dyno in Heroku for the first request</p>
+            </div>
         </div>
      );
 }

@@ -11,7 +11,7 @@ function MainPage(props) {
 
     // read all data from the backend database to the frontend
     useEffect(() => {
-        fetch('http://127.0.0.1:8000/api/posts/', {
+        fetch('https://djangoblogappbackendchris49.herokuapp.com/api/posts/', {
           'method':'GET',
           headers: {
             'Content-Type':'application/json',
@@ -86,11 +86,11 @@ function MainPage(props) {
     return ( 
         <div>
             <div className="d-flex align-items-center justify-content-between p-3 text-white bg-dark">
-                <h1 >React-Django-Blog-App</h1>
+                <h1 className="col d-flex align-items-center justify-content-start">React-Django-Blog-App</h1>
 
-                <div>
-                    <button className="btn btn-primary btn-lg m-3" onClick={insertBtn}>New Post</button>
-                    <button className="btn btn-secondary btn-lg" onClick={logoutBtn}>Logout</button>
+                <div className="col d-flex align-items-center justify-content-end">
+                    <button className="btn btn-primary btn-lg m-1" onClick={insertBtn}>New Post</button>
+                    <button className="btn btn-secondary btn-lg m-1" onClick={logoutBtn}>Logout</button>
                 </div>
             </div>
             

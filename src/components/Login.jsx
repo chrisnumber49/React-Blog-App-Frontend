@@ -26,7 +26,7 @@ function Login(props) {
                 setErrMsg('');
                 setToken('mytoken',resp.token);
             } else{
-                setErrMsg('User Name Not Found!');
+                setErrMsg('User Name Not Found or Password Incorrect!');
             }
         }) // store the response token into 'mytoken' in cookies
     };
@@ -78,7 +78,7 @@ function Login(props) {
             </div>
 
             <div className="text-white mt-5">
-                <p>Try with this user name if you don't want to register: Guest, password: 1234</p>
+                <p>Try with this user name if you don't want to register: Guest, password: keyofguest</p>
                 <p className="text-warning">It will cause a short delay to wake up the web dyno in Heroku for the first request</p>
             </div>
         </div>

@@ -8,10 +8,11 @@ function MainPage(props) {
     const [posts, setPosts] = useState([])
     const [editPost, setEditPost] = useState(null)
     const [token, setToken, removeToken] = useCookies(['mytoken'])
+    const [search, setSearch] = useState('')
 
-    // read all data from the backend database to the frontend
-    useEffect(() => {
-        fetch('https://djangoblogappbackendchris49.herokuapp.com/api/posts/', {
+    //function for fetch the backend API
+    const fetchPosts = () =>{
+        fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/posts/?search=${search}`, {
           'method':'GET',
           headers: {
             'Content-Type':'application/json',
@@ -21,14 +22,21 @@ function MainPage(props) {
         .then(resp => resp.json())
         .then(resp => setPosts(resp))
         .catch(error => console.log(error))
+    };
+
+    // read all data from the backend database to the frontend
+    useEffect(() => {
+        fetchPosts();
       }, [])
 
-    useEffect(() => {
-        if(!token['mytoken']) {
-            props.history.push("/");
-            //window.location.href = '/'    
-        }
-    }, [token])
+
+    // when search form submitted, fetch the backend API with search parameters
+    const searchPost = (e) =>{
+        e.preventDefault();
+
+        fetchPosts();
+        setSearch('');
+    };
 
     // switch to the Form component for inserting (because state editPost != null)
     const insertBtn = () => {
@@ -83,6 +91,13 @@ function MainPage(props) {
         removeToken(['mytoken'])
     };
 
+    useEffect(() => {
+        if(!token['mytoken']) {
+            props.history.push("/");
+            //window.location.href = '/'    
+        }
+    }, [token])
+
     return ( 
         <div>
             <div className="d-flex align-items-center justify-content-between p-3 text-white bg-dark">
@@ -93,7 +108,26 @@ function MainPage(props) {
                     <button className="btn btn-secondary btn-lg m-1" onClick={logoutBtn}>Logout</button>
                 </div>
             </div>
-            
+
+            {/* search input */}
+            {editPost? null:
+                <div className="d-flex justify-content-center flex-wrap mt-3 mb-1">
+                    <form onSubmit={searchPost} className="col-12 col-lg-5">
+                        <div className="form-group text-center">
+                            <label className="h3 text-white">Post Searching Bar</label>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Search Posts..."
+                                className="form-control"
+                                value={search}
+                                onChange={(e) => setSearch(e.target.value)}
+                            />
+                        </div>
+                    </form>
+                </div>
+            }
+
             {editPost? null: <PostList posts={posts} editBtn={editBtn} deleteBtn={deleteBtn}/>}
             {editPost ? <PostForm post={editPost} insertedInformation={insertedInformation} updatedInformation={updatedInformation} cancel={cancel}/> : null}
             

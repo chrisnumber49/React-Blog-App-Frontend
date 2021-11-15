@@ -1,8 +1,8 @@
 # Blog App React Frontend
 
-An application built with React, Bootstrap, JavaScript, and CSS which is used to manage the contact list.
+An application built with React, Bootstrap, JavaScript, and CSS...
 
-This application is deployed on: https://react-contact-app-chris49.netlify.app/
+This application is deployed on: 
 
 ## Project Screen Shots
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo1.PNG" width="600" > 

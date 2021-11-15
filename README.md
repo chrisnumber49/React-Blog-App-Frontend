@@ -6,8 +6,8 @@ This application is deployed on: https://react-contact-app-chris49.netlify.app/
 
 ## Project Screen Shots
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo1.PNG" width="600" > 
-<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo2.PNG" width="600" > 
-<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo3.PNG" width="600" > 
+<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo2.png" width="600" > 
+<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo3.png" width="600" > 
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo4.PNG" width="600" > 
 
 ## Installation and Setup Instructions

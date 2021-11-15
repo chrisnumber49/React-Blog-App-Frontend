@@ -4,6 +4,8 @@ An application built with React, Bootstrap, JavaScript, and CSS...
 
 This application is deployed on: 
 
+Github link of Blog App Django Backend: https://github.com/chrisnumber49/DjangoBlogAppBackend
+
 ## Project Screen Shots
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo1.PNG" width="600" > 
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo2.png" width="600" > 

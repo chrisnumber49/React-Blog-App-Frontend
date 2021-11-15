@@ -1,7 +1,7 @@
 class APIService {
 
   static InsertPost(body, token) {
-    return fetch('https://djangoblogappbackendchris49.herokuapp.com/api/posts/', {
+    return fetch('http://127.0.0.1:8000/api/posts/', {
       'method':'POST',
       headers: {
           'Authorization':`Token ${token}` 
@@ -11,7 +11,7 @@ class APIService {
   }
 
   static PartialUpdatePost(post_id, body, token) {
-    return fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/posts/${post_id}/`, {
+    return fetch(`http://127.0.0.1:8000/api/posts/${post_id}/`, {
       'method':'PATCH',
       headers: {
           'Authorization':`Token ${token}` 
@@ -21,7 +21,7 @@ class APIService {
   }
 
   static DeletePost(post_id, token) {
-    return fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/posts/${post_id}/`, {
+    return fetch(`http://127.0.0.1:8000/api/posts/${post_id}/`, {
       'method':'DELETE',
       headers: {
           'Authorization':`Token ${token}` 
@@ -30,7 +30,7 @@ class APIService {
   }
 
   static InsertComment(body, token) {
-    return fetch('https://djangoblogappbackendchris49.herokuapp.com/api/comments/', {
+    return fetch('http://127.0.0.1:8000/api/comments/', {
       'method':'POST',
       headers: {
           'Authorization':`Token ${token}` 
@@ -40,7 +40,7 @@ class APIService {
   }
 
   static DeleteComment(post_id, token) {
-    return fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/comments/${post_id}/`, {
+    return fetch(`http://127.0.0.1:8000/api/comments/${post_id}/`, {
       'method':'DELETE',
       headers: {
           'Authorization':`Token ${token}` 
@@ -49,7 +49,7 @@ class APIService {
   }
 
   static LoginUser(body) {
-    return fetch('https://djangoblogappbackendchris49.herokuapp.com/auth/', {
+    return fetch('http://127.0.0.1:8000/auth/', {
       'method':'POST',
       headers: {
           'Content-Type':'application/json',
@@ -59,7 +59,7 @@ class APIService {
   }
 
   static RegisterUser(body) {
-    return fetch('https://djangoblogappbackendchris49.herokuapp.com/api/users/', {
+    return fetch('http://127.0.0.1:8000/api/users/', {
       'method':'POST',
       headers: {
           'Content-Type':'application/json',

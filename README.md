@@ -24,6 +24,8 @@ To Visit App: `localhost:3000/`
 
 ## Reflection 
 
-This was my first side project of integrating... In this project I built an application that can... I started this project by using the command `create-react-app` to create the boilerplate, then several additional library `Bootstrap`, `react-cookie` and `react-router-dom` were installed during the development in this project.  
+This is my first side project of integrating full stack development with React frontend and Django backend. In the React frontend I built an Recat frontend interface for blog application. In this... we can... 
 
-The technologies implemented in this project integrate the... Through this side project, I learned about...
+I started this project by using the command `create-react-app` to create the boilerplate, then several additional library `Bootstrap`, `react-cookie` and `react-router-dom` were installed during the development in this project.  
+
+In the frontend interface of this side project, I learned about...

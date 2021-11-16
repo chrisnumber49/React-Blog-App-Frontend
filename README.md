@@ -24,7 +24,7 @@ To Visit App: `localhost:3000/`
 
 ## Reflection 
 
-This is my first side project of integrating full stack development with React frontend and Django backend. In the React frontend I built an Recat frontend interface for blog application. In the frontend of this blog app we firstly render the login page, after authentication succeeded the page will request the data from the backend API to render each post, following users can create, modify and delete their own posts according to their login status or create and delete comments in any existing post. All of information in each post will be stored into the backend REST API.
+This is my first side project of integrating full stack development with React frontend and Django backend. In the React frontend I built an Recat frontend interface for blog application. In the frontend of this blog app we firstly render the login page, after authentication succeeded the page will request the data from the backend API to render each post, following users can create, modify and delete their own posts according to their login status or create and delete comments in any existing post. All of information in each post will be stored into the database in backend REST API.
 
 I started this project by using the command `create-react-app` to create the boilerplate, then several additional library `Bootstrap`, `react-cookie` and `react-router-dom` were installed during the development in this project.  
 

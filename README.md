@@ -1,6 +1,6 @@
 # Blog App React Frontend
 
-An application built with React, Bootstrap, JavaScript, and CSS...
+A frontend interface built with React, Bootstrap, javascript and css for the blog application.
 
 This application is deployed on: https://react-blog-app-frontend-chris49.netlify.app/
 

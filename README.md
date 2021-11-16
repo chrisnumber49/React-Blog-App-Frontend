@@ -7,10 +7,10 @@ This application is deployed on: https://react-blog-app-frontend-chris49.netlify
 Github link of Blog App Django Backend: https://github.com/chrisnumber49/DjangoBlogAppBackend
 
 ## Project Screen Shots
-<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo1.PNG" width="600" > 
-<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo2.png" width="600" > 
-<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo3.png" width="600" > 
-<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo4.PNG" width="600" > 
+<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo1.PNG" width="700" > 
+<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo2.png" width="700" > 
+<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo3.png" width="700" > 
+<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo4.PNG" width="700" > 
 
 ## Installation and Setup Instructions
 

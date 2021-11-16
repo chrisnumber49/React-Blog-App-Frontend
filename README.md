@@ -28,4 +28,4 @@ This is my first side project of integrating full stack development with React f
 
 I started this project by using the command `create-react-app` to create the boilerplate, then several additional library `Bootstrap`, `react-cookie` and `react-router-dom` were installed during the development in this project.  
 
-In the frontend interface of this side project, I learned about more method in the fetch function to implement
+In the frontend interface of this side project, I learned about more method in the fetch function to implement the full stack CRUD, and the concept of react-cookie for the token authentication in each request.

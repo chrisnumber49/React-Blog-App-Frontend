@@ -15,7 +15,7 @@ Github link of Blog App Django Backend: https://github.com/chrisnumber49/DjangoB
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
-
+ 
 Installation: `npm install create-react-app`  
 
 To Start Server: `npm start`  

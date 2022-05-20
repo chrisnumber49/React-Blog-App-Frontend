@@ -9,7 +9,7 @@ Github link of Blog App Django Backend: https://github.com/chrisnumber49/DjangoB
 ## Project Screen Shots
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo1.PNG" width="700" > 
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo2.png" width="700" > 
-<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo3.png" width="700" > 
+<img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo3.PNG" width="700" > 
 <img src="https://github.com/chrisnumber49/React-Blog-App-Frontend/blob/master/screen%20shot/demo4.PNG" width="700" > 
 
 ## Installation and Setup Instructions

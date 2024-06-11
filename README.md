@@ -2,8 +2,6 @@
 
 A frontend interface built with React, Bootstrap, JavaScript, and CSS for the blog application.
 
-This application is deployed on: https://react-blog-app-frontend-chris49.netlify.app/
-
 Github link of Blog App Django Backend: https://github.com/chrisnumber49/DjangoBlogAppBackend
 
 ## Project Screen Shots

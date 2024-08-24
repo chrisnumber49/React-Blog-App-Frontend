@@ -1,7 +1,8 @@
 class APIService {
-
+  // ('Content-Type':'application/json') means the format of data you send is json, need (JSON.stringify(body))
+  // send the form data, the format will be (multipart/form-data with file) or (application/x-www-form-urlencoded without file)
   static InsertPost(body, token) {
-    return fetch('http://127.0.0.1:8000/api/posts/', {
+    return fetch('https://djangoblogappbackendchris49.herokuapp.com/api/posts/', {
       'method':'POST',
       headers: {
           'Authorization':`Token ${token}` 
@@ -11,7 +12,7 @@ class APIService {
   }
 
   static PartialUpdatePost(post_id, body, token) {
-    return fetch(`http://127.0.0.1:8000/api/posts/${post_id}/`, {
+    return fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/posts/${post_id}/`, {
       'method':'PATCH',
       headers: {
           'Authorization':`Token ${token}` 
@@ -21,7 +22,7 @@ class APIService {
   }
 
   static DeletePost(post_id, token) {
-    return fetch(`http://127.0.0.1:8000/api/posts/${post_id}/`, {
+    return fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/posts/${post_id}/`, {
       'method':'DELETE',
       headers: {
           'Authorization':`Token ${token}` 
@@ -30,7 +31,7 @@ class APIService {
   }
 
   static InsertComment(body, token) {
-    return fetch('http://127.0.0.1:8000/api/comments/', {
+    return fetch('https://djangoblogappbackendchris49.herokuapp.com/api/comments/', {
       'method':'POST',
       headers: {
           'Authorization':`Token ${token}` 
@@ -40,7 +41,7 @@ class APIService {
   }
 
   static DeleteComment(post_id, token) {
-    return fetch(`http://127.0.0.1:8000/api/comments/${post_id}/`, {
+    return fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/comments/${post_id}/`, {
       'method':'DELETE',
       headers: {
           'Authorization':`Token ${token}` 
@@ -49,7 +50,7 @@ class APIService {
   }
 
   static LoginUser(body) {
-    return fetch('http://127.0.0.1:8000/auth/', {
+    return fetch('https://djangoblogappbackendchris49.herokuapp.com/auth/', {
       'method':'POST',
       headers: {
           'Content-Type':'application/json',
@@ -59,7 +60,7 @@ class APIService {
   }
 
   static RegisterUser(body) {
-    return fetch('http://127.0.0.1:8000/api/users/', {
+    return fetch('https://djangoblogappbackendchris49.herokuapp.com/api/users/', {
       'method':'POST',
       headers: {
           'Content-Type':'application/json',

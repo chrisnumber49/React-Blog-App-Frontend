@@ -77,9 +77,9 @@ function Login(props) {
                 }
             </div>
 
-            <div className="text-white mt-5">
-                <p>Try with this user name if you don't want to register: Guest, password: keyofguest</p>
-                <p className="text-warning">It will cause a short delay to wake up the web dyno in Heroku for the first request</p>
+            <div className="text-dark mt-5">
+                <p>Try with this Account if you don't want to register <span className="font-weight-bolder">Username: Guest, Password: keyofguest</span>.</p>
+                <p className="font-weight-bolder" style={{"color": "rgb(235, 134, 41)"}} >It will cause a short delay to wake up the web dyno in Heroku for the first request</p>
             </div>
         </div>
      );

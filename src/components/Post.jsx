@@ -53,9 +53,9 @@ function Post(props) {
             <div className="card border border-dark rounded-lg shadow-lg my-2 col-12 col-lg-5">
                 {/* row to show the user who post it and place the edit/delter button */}
                 <div className="d-flex align-items-center justify-content-between p-2">
-                    <h4 className="ml-2 font-weight-bolder">{props.post.author.username}</h4>
+                    <h4 className="ml-2 font-weight-bolder">{props.post.author}</h4>
 
-                    {currentUser === props.post.author.username && 
+                    {currentUser === props.post.author && 
                         <div>
                             <button className="btn btn-info btn-sm text-white m-1" onClick={() => props.editBtn(props.post)}>
                                 <i className="material-icons">edit</i>

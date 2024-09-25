@@ -12,7 +12,7 @@ function MainPage(props) {
 
     //function for fetch the backend API
     const fetchPosts = () =>{
-        fetch(`https://djangoblogappbackendchris49.herokuapp.com/api/posts/?search=${search}`, {
+        fetch(`http://127.0.0.1:8000/api/posts/?search=${search}`, {
           'method':'GET',
           headers: {
             'Content-Type':'application/json',
